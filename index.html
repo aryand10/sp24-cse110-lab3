@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSE 110 Lab 2 HTML Site</title>
+    <meta name ="author" content="Aryan Desai">
+    <link rel="icon" type="image/x-icon" href="Lab2FavIcon.ico"/>
+  </head>
+  <body>
+    
+    <header>
+        <h1>CSE 110 Lab 2</h1>
+        <h2>Meeting Minutes Example</h2>
+        <h3>April 14th, 2024</h3>
+    </header>
+    <hr>
+    <main>
+    <section>
+        <h4> Meeting Attendees</h4>
+        <ul>
+            <li>I</li>
+            <li>Me</li>
+            <li>Myself</li>
+        </ul>
+    </section>
+    <hr>
+    <div>
+        <h4>Meeting Agenda</h4>
+        <ol>
+            <li>Unfinished Business</li>
+            <li>New Business</li>
+            <li>Questions/Comments/Concerns</li>
+            <li>Image Review</li>
+            <li>Audio and Video Review</li>
+            <li>Interactive Elements</li>
+            <li>Forms</li>
+            <li>Final Takeaways</li>
+        </ol>
+    </div>
+    <hr>
+    <section>
+        <h4>Unfinished Business</h4>
+        <p>There was no previous meeting so this space will be used to 
+            demonstrate the difference HTML properties if no better space is found. 
+            First we will discuss and demonstrate the difference between the b tag and the strong tag.
+            The b tag results in text that looks like: <b>this</b>. The strong 
+            tag results in text that looks like: <strong>this</strong>. WHile they look
+            similar, the b tag is to draw attention to text without indicating it is 
+            more important while the strong tag also indicates that it is important. 
+        </p>
+        <p>
+            An a tag is also present to insert hyperlinks like the following:
+        </p>
+        <p>
+            <a href="https://www.formula1.com/en/drivers/hall-of-fame/Ayrton_Senna.html">Learn about Formula One Legend, Ayrton Senna!</a>
+        </p>
+    </section>
+    <hr>
+    <section>
+        <h4>New Business</h4>
+        <p>Since no meeting exists and this is a demo document this space will instead
+            be used to continue working with more HTML properties. This space will demonstrate 
+            the difference between the i and em tags. The i tag results in italisized text that looks like:
+            <i>this</i>. It is used when any text needs to be italisized without any specification with regards
+            to emphasis. The em tag is used to particular emphasize certain text and it looks like:
+            <em>this</em>. 
+        </p>
+        <p>
+            There is also a br tag used to force line breaks. <br> The result of <br> using
+            this <br> would look something like <br> this.
+        </p>
+    </section>
+    <hr>
+    <section>
+        <h4>Questions/Comments/Concerns</h4>
+        <p>There are no questions/comments/concerns to report at the time.</p>
+    </section>
+    <hr>
+    <section>
+        <h4>Image Review</h4>
+        <p>This space will be used to showcase image inclusion in HTML. The following image has been embedded into this page 
+            to this end. It is a picture of a controversial moment in Formula One history between Ayrton Senna and Alain Prost.
+        </p>
+        <img src="SennaProstSuzuka.jpg" alt="Senna Post Suzuka Image" width="500">
+    </section>
+    <hr>
+    <section>
+        <h4>Audio and Video Review</h4>
+        <p>The audio and video samples
+            used in this section were sourced from the internet as I was having difficulities with my laptop audio/visual equipment.
+        </p>
+        <p>Here's a video showcasing a great F1 battle during the 2022 British Grand Prix!</p>
+        <video width="500" controls>
+            <source src="CSE110Lab2SampleVideo.mp4" type="video/mp4">
+        </video>
+        <p>Here's some elevator music to showcase audio in HTML!</p>
+        <audio controls>
+            <source src="CSE110Lab2SampleAudio.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+    <hr>
+    <section>
+        <h4>Interactive Elements</h4>
+        <details>
+            <summary>The Details and Summary Tags</summary>
+            <p>This is an example of what can be done with the details and summary tags in HTML.</p>
+        </details>
+    </section>
+    <hr>
+    <section>
+        <h4>Forms</h4>
+        <p>Below is an example of a non-functional form.</p>
+        <form>
+            <fieldset>
+                <legend>Sample Form:</legend>
+                <br>
+                <label for="fName">First name:</label>
+                <input type="text" id="fName" name="fName"><br><br>
+                <label for="lName">Last name:</label>
+                <input type="text" id="lName" name="lName"><br><br>
+                <label for="fCar">Favorite Car:</label>
+                <input type="text" id="fCar" name="fCar"><br><br>
+                <p>Enter whatever text you'd like below:</p>
+                <textarea id="sampForm" name="sampForm" rows="3"> 
+                </textarea><br><br>
+                <label for="f1">Choose an F1 Driver:</label>
+                <input list="f1s" name="f1" id="f1">
+                <datalist id="f1s">
+                    <option value="Carlos Sainz">
+                    <option value="Lando Norris">
+                    <option value="Charles Leclerc">
+                    <option value="Alex Albon">
+                    <option value="Lewis Hamilton">
+                </datalist> <br><br>
+                <label for="cars">Choose a car:</label>
+                <select name="cars" id="cars">
+                    <option value="stinger">Kia Stinger</option>
+                    <option value="rogue">Nissan Rogue</option>
+                    <option value="integra">Acura Integra</option>
+                    <option value="prius">Toyota Prius</option>
+                </select><br><br>
+                <button type="button">Submit!</button>
+            </fieldset>
+        </form>
+    </section>
+    <hr>
+    <section>
+        <h4>Final Takeaways</h4>
+    </section>
+    <hr>
+    </main>
+    <nav>
+        <p>
+            To see another site by the author, check out <a href="https://aryand10.github.io/Lab1_CSE110/">this link</a>!
+        </p>
+    </nav>
+    <footer>
+        <p>For more information contact: Aryan Desai</p>
+        <p><span> This is an example of span being used without CSS and style.</span></p>
+        <p><a href="mailto:a7desai@ucsd.edu">a7desai@ucsd.edu</a></p>
+    </footer>
+  </body>
+</html>
