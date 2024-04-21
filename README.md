@@ -1,5 +1,5 @@
-# Lab 2 CSE 110
+# Lab 3 CSE 110
 
-HTML Meeting Minutes Page: https://aryand10.github.io/CSE_110_Lab_2/
+HTML Meeting Minutes Page: https://aryand10.github.io/sp24-cse110-lab3/
 
 
