@@ -3,6 +3,8 @@ body {
     font-family: Arial, sans-serif; /* Setting a base font for the body */
     color: #333; /* Default text color */
     background-color: #f4f4f4; /* Light grey background for the content */
+    margin: 0; /* Removing default margin */
+    padding: 0; /* Removing default padding */
 }
 
 /* CSS Variables with Fallback */
@@ -11,16 +13,50 @@ body {
     --primary-color-fallback: rgb(0, 123, 255); /* Fallback color using rgb */
 }
 
+/* Header and Footer Styles */
 header, footer {
     background-color: var(--primary-color, var(--primary-color-fallback)); /* Using CSS variable with fallback */
     color: #fff;
-    padding: 10px 20px;
     text-align: center;
+    padding: 10px 20px; /* Shorthand padding: top and bottom 10px, left and right 20px */
+    border-bottom: 5px solid #dee2e6; /* Border style for header */
+    border-top: 5px solid #dee2e6; /* Border style for footer */
+}
+
+/* Header Margin styles */
+header {
+    margin-top: 20px; /* Longhand margin top */
+    margin-bottom: 20px; /* Longhand margin bottom */
+    margin-left: auto; /* Longhand margin left */
+    margin-right: auto; /* Longhand margin right */
+}
+
+/* Footer Margin styles */
+footer {
+    margin: 20px auto; /* Shorthand margin: top and bottom 20px, left and right auto */
+}
+
+/* Section Styles */
+section {
+    background-color: color-mix(in srgb, red 90%, blue 10%); /* Using color-mix for background */
+    padding: 20px; /* Uniform padding */
+    margin-top: 20px; /* Uniform margin-top */
+    margin-bottom: 20px; /* Uniform margin-bottom */
+    border: 2px solid black; /* Shorthand for border */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Additional Example of Margin Longhand */
+.main-content {
+    margin-top: 1em; /* Longhand margin top */
+    margin-right: 2em; /* Longhand margin right */
+    margin-bottom: 1em; /* Longhand margin bottom */
+    margin-left: 2em; /* Longhand margin left */
 }
 
 /* Example of using different color formats */
 h1, h2, h3 {
-    color: hsl(210, 50%, 40%); /* HSL color format */
+    color: hsl(210, 50%, 40%); /* HSL color format for headers */
 }
 
 h4 {
@@ -29,12 +65,12 @@ h4 {
 
 /* Links styling */
 a {
-    color: #007bff; /* Hexadecimal color code */
-    text-decoration: none; /* No underline */
+    color: #007bff; /* Hexadecimal color code for links */
+    text-decoration: none; /* No underline for links */
 }
 
 a:hover {
-    color: #0056b3;
+    color: #0056b3; /* Darker blue on hover */
     text-decoration: underline; /* Underline on hover */
 }
 
@@ -43,10 +79,31 @@ p {
     color: color(srgb 0 0 1); /* Using sRGB color space for pure blue text */
 }
 
-/* Color mixing example */
-section {
-    background-color: color-mix(in srgb, red 90%, blue 10%); /* Mixing red and blue to create a custom purple */
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
+/* Explicit Box Model Demonstrations */
+/* Margin Shorthand and Longhand */
+div {
+    margin: 5px; /* All margins are 5px */
+    margin-top: 10px; /* Overriding top margin */
+}
+
+/* Padding Shorthand and Longhand */
+div {
+    padding: 5px; /* All paddings are 5px */
+    padding-top: 10px; /* Overriding top padding */
+}
+
+/* Border Shorthand and Longhand */
+div {
+    border-width: 5px; /* All borders are 5px */
+    border-style: solid; /* Style of border */
+    border-color: green; /* Color of border */
+}
+
+/* Demonstrating Different Units for Margin, Padding, Border */
+.unique-units-example {
+    margin: 100px 1in 10% 2em; /* Different units for margin */
+    padding: 5vh 5vw 10px 2cm; /* Different units for padding */
+    border-width: 3pt 2px 4mm 5pc; /* Different units for borders */
+    border-style: dotted dashed solid double; /* Different border styles for each side */
+    border-color: red green blue black; /* Different border colors for each side */
 }
