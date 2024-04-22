@@ -184,3 +184,29 @@ a:hover, a:active {
 body {
     font-family: 'Roboto', Arial, sans-serif; /* Roboto font with Arial as a fallback */
 }
+
+/* Universal Selector: Applies to all elements */
+* {
+    box-sizing: border-box; /* Ensures padding and border are included in the width and height */
+}
+
+/* Class Selector: Targets elements with the specific class "highlight" */
+.highlight {
+    background-color: yellow; /* Highlights text with a yellow background */
+}
+
+/* ID Selector: Targets the element with the specific ID "uniqueElement" */
+#uniqueElement {
+    border: 2px solid red; /* Adds a red border around the flex container */
+}
+
+/* Element Selector: Targets all <div> elements */
+div {
+    margin-bottom: 10px; /* Adds margin below all div elements */
+}
+
+/* Attribute Selector: Targets elements with a "data-type" attribute equal to "special-text" */
+[data-type="special-text"] {
+    color: green; /* Colors the text green */
+    font-weight: bold; /* Makes the font bold */
+}
