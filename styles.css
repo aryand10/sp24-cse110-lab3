@@ -142,3 +142,45 @@ div {
     top: 100px;
     left: 50px;
 }
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Responsiveness with Media Queries */
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Pseudo-classes */
+a:hover, a:active {
+    color: #ff4500; /* Orange color for hover and active states */
+    text-decoration: underline;
+}
+
+/* Using a 3rd party font */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Roboto font with Arial as a fallback */
+}
