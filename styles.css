@@ -107,3 +107,38 @@ div {
     border-style: dotted dashed solid double; /* Different border styles for each side */
     border-color: red green blue black; /* Different border colors for each side */
 }
+
+/* New Additions for Display Properties */
+.hide-element {
+    display: none; /* Hide element */
+}
+
+.block-element {
+    display: block; /* Element displayed as block */
+}
+
+.inline-block-element {
+    display: inline-block; /* Element displayed as inline-block */
+}
+
+/* New Additions for Sizing */
+.sized-element {
+    height: 200px; /* Fixed height */
+    width: 50%; /* Relative width */
+    max-width: 600px; /* Maximum width */
+    min-width: 300px; /* Minimum width */
+}
+
+/* New Additions for Positioning */
+.position-fixed {
+    position: fixed; /* Fixed position */
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+.position-absolute {
+    position: absolute; /* Absolute position */
+    top: 100px;
+    left: 50px;
+}
