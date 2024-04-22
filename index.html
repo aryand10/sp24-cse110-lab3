@@ -5,6 +5,23 @@
     <meta name ="author" content="Aryan Desai">
     <link rel="icon" type="image/x-icon" href="Lab2FavIcon.ico"/>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS for text styling */
+        h1 {
+          color: #324376; /* Dark blue color for the main heading */
+          text-decoration: underline; /* Underline decoration */
+          text-align: center; /* Center alignment */
+        }
+        h2 {
+          color: #5e6679; /* Grayish blue for secondary headings */
+          text-decoration: overline; /* Overline decoration */
+          text-align: left; /* Left alignment */
+        }
+        p {
+          color: #333; /* Dark text for readability */
+          text-align: justify; /* Justify alignment for paragraphs */
+        }
+      </style>
   </head>
   <body>
     <header>
@@ -14,7 +31,7 @@
     </header>
     <hr>
     <main style="background-color: #e9ecef;">
-    <section>
+    <section class="display-inline-block">
         <h4> Meeting Attendees</h4>
         <ul>
             <li>I</li>
@@ -23,7 +40,7 @@
         </ul>
     </section>
     <hr>
-    <div>
+    <div class="hide-element">
         <h4>Meeting Agenda</h4>
         <ol>
             <li>Unfinished Business</li>
@@ -37,7 +54,7 @@
         </ol>
     </div>
     <hr>
-    <section>
+    <section class="position-absolute sized-element">
         <h4>Unfinished Business</h4>
         <p>There was no previous meeting so this space will be used to 
             demonstrate the difference HTML properties if no better space is found. 
@@ -148,7 +165,7 @@
     </section>
     <hr>
     </main>
-    <nav>
+    <nav class="position-fixed">
         <p>
             To see another site by the author, check out <a href="https://aryand10.github.io/Lab1_CSE110/">this link</a>!
         </p>
