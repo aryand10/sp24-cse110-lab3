@@ -1,0 +1,52 @@
+/* Base Element Styles */
+body {
+    font-family: Arial, sans-serif; /* Setting a base font for the body */
+    color: #333; /* Default text color */
+    background-color: #f4f4f4; /* Light grey background for the content */
+}
+
+/* CSS Variables with Fallback */
+:root {
+    --primary-color: #007bff; /* Primary color for the website */
+    --primary-color-fallback: rgb(0, 123, 255); /* Fallback color using rgb */
+}
+
+header, footer {
+    background-color: var(--primary-color, var(--primary-color-fallback)); /* Using CSS variable with fallback */
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Example of using different color formats */
+h1, h2, h3 {
+    color: hsl(210, 50%, 40%); /* HSL color format */
+}
+
+h4 {
+    color: rgba(0, 0, 0, 0.8); /* RGBA color format, with alpha for transparency */
+}
+
+/* Links styling */
+a {
+    color: #007bff; /* Hexadecimal color code */
+    text-decoration: none; /* No underline */
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Wide-gamut color usage example */
+p {
+    color: color(srgb 0 0 1); /* Using sRGB color space for pure blue text */
+}
+
+/* Color mixing example */
+section {
+    background-color: color-mix(in srgb, red 90%, blue 10%); /* Mixing red and blue to create a custom purple */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
