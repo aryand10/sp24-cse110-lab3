@@ -210,3 +210,53 @@ div {
     color: green; /* Colors the text green */
     font-weight: bold; /* Makes the font bold */
 }
+
+/* Pseudo-class Selector */
+.hover-effect:hover {
+    color: red; /* Text color changes to red on hover */
+}
+
+/* Selector List */
+h1, h2, .hover-effect {
+    margin-left: 20px; /* Applies left margin to h1, h2, and elements with class 'hover-effect' */
+}
+
+/* Combinators */
+/* Descendant Combinator */
+#combinatorExample div div {
+    color: blue; /* Selects divs that are descendants of a div inside #combinatorExample */
+}
+
+/* Child Combinator */
+#combinatorExample > div {
+    border: 1px solid black; /* Selects direct child divs of #combinatorExample */
+}
+
+/* General Sibling Combinator */
+.general-sibling ~ .general-sibling {
+    background-color: lightgreen; /* Selects all .general-sibling elements that follow another .general-sibling */
+}
+
+/* Adjacent Sibling Combinator */
+.adjacent-sibling + div {
+    border-top: 3px solid orange; /* Selects the first div immediately following .adjacent-sibling */
+}
+
+/* Combining Two Selectors */
+div.example > .hover-effect {
+    font-weight: bold; /* Selects .hover-effect that is a direct child of a div with class 'example' */
+}
+
+/* New :has() Selector */
+div:has(> .hover-effect) {
+    padding: 10px;
+    background-color: #f0f0f0; /* Selects div elements that directly contain an element with class 'hover-effect' */
+}
+
+/* Nested Selectors */
+div.example {
+    color: navy;
+    div {
+        color: maroon; /* CSS nesting is used to specify that divs inside .example should be maroon */
+    }
+}
